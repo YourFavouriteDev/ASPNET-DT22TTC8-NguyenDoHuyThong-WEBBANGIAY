@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/ucControls/Master/ucMenuArea.ascx" TagPrefix="uc1" TagName="ucMenuArea" %>
+<%@ Register Src="~/ucControls/Master/ucJS.ascx" TagPrefix="uc1" TagName="ucJS" %>
+<%@ Register Src="~/ucControls/Master/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+<!DOCTYPE html>
+<html>
+    <head runat="server" class="no-js" lang="en">
+        <title>Shop Bán Giày</title>
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+        <!-- WebFont.js -->
+        <script>
+            WebFontConfig = {
+                google: { families: ['Poppins:400,500,600,700,800'] }
+            };
+            (function (d) {
+                var wf = d.createElement('script'), s = d.scripts[0];
+                wf.src = 'assets/js/webfont.js';
+                wf.async = true;
+                s.parentNode.insertBefore(wf, s);
+            })(document);
+        </script>
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+        <!-- Default CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/demo1.min.css">
+        <link href="assets/css/style.min.css" rel="stylesheet" />
+        <link href="assets/css/site.css" rel="stylesheet" />
+        <style>
+          .modal {
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            margin-top: 5rem !important;
+          }
+        </style>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <%-- Ajaxx --%>
+            <asp:ScriptManager runat="server" />
+            <!-- Start of Page-wrapper-->
+            <div class="page-wrapper">
+                <uc1:ucMenuArea runat="server" ID="ucMenuArea" />
+                <asp:ContentPlaceHolder runat="server" ID="content">
+                </asp:ContentPlaceHolder>
+                <uc1:ucFooter runat="server" ID="ucFooter" />
+            </div>
+            <!-- End of Page-wrapper-->
+            <uc1:ucJS runat="server" ID="ucJS" />
+            <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolderJS">
+            </asp:ContentPlaceHolder>
+        </form>
+        <div id="cartModal" class="modal" style="display:none;">
+          <div class="modal-content" style="padding: 20px; background: white; border-radius: 6px; max-width: 400px; margin: auto; text-align: center; margin-top: 5rem;">
+            <h4>Sản phẩm đã được thêm vào giỏ hàng!</h4>
+            <button onclick="closeCartModal()" style="margin-top: 10px;">Đóng</button>
+          </div>
+        </div>
+    </body>
+</html>
