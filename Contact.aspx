@@ -97,70 +97,42 @@
                 <section class="contact-section">
                     <div class="row gutter-lg pb-3">
                         <div class="col-lg-6 mb-8">
-                            <h4 class="title mb-3">People usually ask these</h4>
+                            <h4 class="title mb-3">Câu hỏi thường gặp</h4>
                             <div class="accordion accordion-bg accordion-gutter-md accordion-border">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#collapse1" class="collapse">How can I cancel my order?</a>
+                                <div class="accordion-custom">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Làm thế nào để huỷ đơn hàng?</div>
+                                        <div class="accordion-content">
+                                            Bạn có thể huỷ đơn hàng trước khi chúng tôi xác nhận và giao hàng. Vui lòng liên hệ hotline hoặc mục “Theo dõi đơn hàng”.
+                                        </div>
                                     </div>
-                                    <div id="collapse1" class="card-body expanded">
-                                        <p class="mb-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp orincid 
-                                                idunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulp utate eu sceler 
-                                                isque felis. Vel pretium.
-                                        </p>
+                                
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Tôi không nhận được email xác nhận?</div>
+                                        <div class="accordion-content">
+                                            Vui lòng kiểm tra hộp thư rác. Nếu vẫn chưa nhận được, hãy xác minh địa chỉ email hoặc liên hệ bộ phận hỗ trợ.
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#collapse2" class="expand">Why is my registration delayed?</a>
+                                
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Tôi cần gì để mua hàng?</div>
+                                        <div class="accordion-content">
+                                            Bạn chỉ cần có tài khoản hoặc nhập thông tin đầy đủ trong phần thanh toán. Không bắt buộc phải đăng nhập.
+                                        </div>
                                     </div>
-                                    <div id="collapse2" class="card-body collapsed">
-                                        <p class="mb-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp orincid 
-                                                idunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulp utate eu sceler 
-                                                isque felis. Vel pretium.
-                                        </p>
+                                
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Làm sao để theo dõi đơn hàng?</div>
+                                        <div class="accordion-content">
+                                            Truy cập mục “Theo dõi đơn hàng” và nhập mã đơn hoặc đăng nhập tài khoản đã mua hàng.
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#collapse3" class="expand">What do I need to buy products?</a>
-                                    </div>
-                                    <div id="collapse3" class="card-body collapsed">
-                                        <p class="mb-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp orincid 
-                                                idunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulp utate eu sceler 
-                                                isque felis. Vel pretium.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#collapse4" class="expand">How can I track an order?</a>
-                                    </div>
-                                    <div id="collapse4" class="card-body collapsed">
-                                        <p class="mb-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp orincid 
-                                                idunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulp utate eu sceler 
-                                                isque felis. Vel pretium.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#collapse5" class="expand">How can I get money back?</a>
-                                    </div>
-                                    <div id="collapse5" class="card-body collapsed">
-                                        <p class="mb-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                temp orincid idunt ut labore et dolore magna aliqua. Venenatis tellus in
-                                                metus vulp utate eu sceler isque felis. Vel pretium.
-                                        </p>
+                                
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Tôi sẽ được hoàn tiền khi nào?</div>
+                                        <div class="accordion-content">
+                                            Sau khi chúng tôi xác nhận yêu cầu hoàn tiền, thời gian xử lý từ 3 đến 5 ngày làm việc.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -171,42 +143,27 @@
                         </div>
                     </div>
                 </section>
-                <!-- End of Contact Section -->
             </div>
-
-            <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-            <div class="google-map contact-google-map" id="googlemaps"></div>
-            <!-- End Map Section -->
         </div>
-        <!-- End of PageContent -->
     </main>
-
-    <div class="contact_area" style="margin-top: 50px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact_message content">
-                        <h3>Liên hệ với chúng tôi</h3>
-                        <p>Chúng tôi chuyên cung cấp các sản phẩm thực phẩm sạch an toàn cho sức khỏe con người</p>
-                        <ul>
-                            <li><i class="fa fa-fax"></i>Địa chỉ : Ladeco Building, 266 Doi Can Street, Hà Nội, Vietnam</li>
-                            <li><i class="fa fa-phone"></i><a href="#">nvquyen.cntt@gmail.com</a></li>
-                            <li><i class="fa fa-envelope-o"></i><a href="tel:0972332803">0972332803</a>  </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact_message form">
-                        <h3>Nhập thông tin liên hệ</h3>
-
-                        <uc1:ucContactForm runat="server" ID="ucContactForm" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumbs End -->
-
-
+    <style>
+        .accordion-custom .accordion-header {
+            background: #f5f5f5;
+            padding: 12px 16px;
+            cursor: pointer;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .accordion-custom .accordion-content {
+            display: none;
+            padding: 12px 16px;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+        .accordion-custom .accordion-item.active .accordion-content {
+            display: block;
+        }
+    </style>
 </asp:Content>
 

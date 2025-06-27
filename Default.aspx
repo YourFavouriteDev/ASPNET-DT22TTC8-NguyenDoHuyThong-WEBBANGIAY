@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
+   
 <%--<%@ Register Src="~/ucControls/ucSpecialProduct.ascx" TagPrefix="uc1" TagName="ucSpecialProduct" %>--%>
 <%@ Register Src="~/ucControls/Default/ucSlideHomeTop.ascx" TagPrefix="uc2" TagName="ucSlideHomeTop" %>
 <%@ Register Src="~/ucControls/Default/ucDealOfDay.ascx" TagPrefix="uc1" TagName="ucDealOfDay" %>
