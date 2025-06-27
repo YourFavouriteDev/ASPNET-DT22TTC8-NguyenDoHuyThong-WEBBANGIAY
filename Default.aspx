@@ -225,7 +225,7 @@
             <!-- End of Brands Wrapper -->
             
             <!-- Post Wrapper -->
-            <uc1:ucHomeArticle runat="server" ID="ucHomeArticle" />
+            <%--<uc1:ucHomeArticle runat="server" ID="ucHomeArticle" />--%>
         </div>
         <!--End of Catainer -->
     </main>

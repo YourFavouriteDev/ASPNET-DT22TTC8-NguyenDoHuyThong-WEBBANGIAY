@@ -41,6 +41,22 @@
             margin-top: 5rem !important;
           }
         </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const items = document.querySelectorAll('.accordion-custom .accordion-item');
+
+                items.forEach(item => {
+                    item.querySelector('.accordion-header').addEventListener('click', () => {
+                        // Đóng tất cả
+                        items.forEach(i => i.classList.remove('active'));
+
+                        // Mở cái được click
+                        item.classList.add('active');
+                    });
+                });
+            });
+        </script>
+
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
     </head>
