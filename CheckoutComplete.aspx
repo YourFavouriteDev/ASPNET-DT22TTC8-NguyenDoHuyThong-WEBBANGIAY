@@ -77,7 +77,7 @@
     <main class="main checkout">
         <div class="container">
             <div class="row" style="margin:50px;">
-                <div class="col-md-6" style="border: solid; color: #009853; height: 350px; padding-top: 15px; border-radius: 5px;">
+                <div class="col-md-6" style="border: solid; color: #009853; height: 360px; padding-top: 15px; border-radius: 5px;">
                     <uc1:ucMessage runat="server" ID="ucMessage" />
                     <p id="animationfree">
                         <img style="width: 250px; height: 250px" src="assets/images/giao-hang.png" />
@@ -85,9 +85,9 @@
                 </div>
                 <div class="col-md-1">
                 </div>
-                <div class="col-md-5" style="border: solid; color: #009853; height: 350px; border-radius: 5px;">
+                <div class="col-md-5" style="border: solid; color: #009853; height: 360px; border-radius: 5px;">
                     <div style="font-size: 18px; text-align: center; font-weight: 600; margin-top: 10px">Chi tiết đơn hàng</div>
-                    <div style="margin-left: 20px; font-size: 15px; line-height: 40px;">
+                    <div style="margin-left: 20px; font-size: 15px; line-height: 40px; ">
                         <asp:Repeater runat="server" ID="Repeater_OrderDetail">
                             <ItemTemplate>
                                 <div><span class="text-default">Khách hàng:</span>   <%# Eval("FullName")%></div>
