@@ -14,17 +14,13 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         if (!IsPostBack)
         {
             ucMessage.HideAll();
-            //Load dữ liệu trong dropdow
             LoadCategoryData();
             LoadData();
-
-
         }
     }
 
     public void LoadData()
     {
-
         string catID = Request.QueryString["catid"].ToSafetyString();
         string title = Request.QueryString["title"].ToSafetyString();
 
@@ -83,7 +79,7 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         ucPagging.TotalItems = totalItem;
         ucPagging.DataBind();
 
-        var data = query.Skip(curuntPage).Take(pageSize).ToList();
+        var data = query.Skip((curuntPage - 1) * pageSize).Take(pageSize).ToList();
 
         Repeater_Account.DataSource = data;
         Repeater_Account.DataBind();
@@ -132,11 +128,10 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         //Tạo thêm một Item mặc định
         ListItem item = new ListItem();
         item.Value = string.Empty;
-        item.Text = ".:Chọn loại tài khoản:.";
+        item.Text = "Chọn loại tài khoản:";
 
         //Chèn Item mặc định vào đầu danh sách Dropdown
         DropDownList_Category.Items.Insert(0, item);
-
     }
 
     protected void DropDownList_Category_SelectedIndexChanged(object sender, EventArgs e)
@@ -174,7 +169,6 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
 
     protected void LinkButton_SaveAvatar_Click(object sender, EventArgs e)
     {
-
         //Ép kiểu sender về dạng LinkButton
         LinkButton linkButton = sender as LinkButton;
         //Lấy ID của tài khoản cần đổi hình
@@ -257,7 +251,6 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         {
             ucMessage.ShowError("Bạn không thể xóa chính mình");
             return;
-
         }
 
         if (SessionUtility.AdminCategoryID != "SupperAdmin")
@@ -279,7 +272,6 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-
             ucMessage.ShowError("Chưa xóa được, vui lòng thử lại");
         }
         SearchData("success", "Đã xóa dữ liệu");
@@ -296,14 +288,13 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
 
         if (ID == SessionUtility.AdminUsername)
         {
-            ucMessage.ShowError("Bạn không thể Active chính mình");
+            ucMessage.ShowError("Bạn không thể thay đổi trạng thái chính mình");
             return;
-
         }
 
         if (SessionUtility.AdminCategoryID != "SupperAdmin")
         {
-            ucMessage.ShowError("Bạn không đủ quyền để xóa tài khoản");
+            ucMessage.ShowError("Bạn không đủ quyền để thay đổi trạng thái tài khoản");
             return;
         }
         if (item == null)
@@ -323,7 +314,6 @@ public partial class Admin_Pages_AccountList : System.Web.UI.Page
         }
         SearchData("success", "Đã cập nhật trạng thái thành công");
         return;
-
     }
 
 }

@@ -3,8 +3,6 @@
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 <%@ Register Src="~/Admin/UserControl/ucPagging.ascx" TagPrefix="uc1" TagName="ucPagging" %>
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Quản lí danh sách sản phẩm
     </title>
@@ -21,15 +19,11 @@
                 </li>
                 <!--Thanh breadcrumb-->
                 <li>
-                    <a runat="server" href="~/Admin/Default.aspx">Bàn Làm Việc</a>
+                    <a runat="server" href="~/Admin/Default.aspx">Bàn Làm Việc</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a runat="server" href="~/Admin/AccountCategoryList.aspx">Loại Tài Khoản</a>
-                    <span class="divider">&gt;</span>
-                </li>
-                <li>
-                    <a runat="server" href="~/Admin/AccountList.aspx">Danh Sách Tài Khoản</a>
+                    <a runat="server" href="~/Admin/AccountList.aspx">Tài Khoản</a>
                 </li>
             </ul>
         </div>
@@ -48,9 +42,6 @@
                             <li>
                                 <a runat="server" href="~/Admin/AccountEdit.aspx" class="isw-plus tip" title="Thêm mới"></a>
                             </li>
-                            <li>
-                                <a href="javascript:alert('Chức năng đang phát triển')" class="isw-delete tip" title="Xóa chọn"></a>
-                            </li>
                         </ul>
                     </div>
                     <div class="block-fluid table-sorting clearfix">
@@ -62,7 +53,6 @@
                                     OnSelectedIndexChanged="DropDownList_Category_SelectedIndexChanged"
                                     AutoPostBack="true"
                                     Style="margin-right: 10px; border-radius: 4px;" />
-
                                 <input runat="server" id="input_Title" type="text" placeholder="Lọc theo: tên đăng nhập, họ tên, email hoặc SĐT" style="width: 350px" />
                                 <asp:LinkButton runat="server"
                                     ID="LinkButton_Search"
@@ -73,7 +63,6 @@
                                 </asp:LinkButton>
                             </asp:Panel>
                         </div>
-
                         <div class="dataTables_length">
                             <asp:LinkButton runat="server"
                                 ID="LinkButton_ClearSearch"
@@ -86,7 +75,6 @@
                         <!--Content-->
                         <table cellpadding="0" cellspacing="0" width="100%" class="table listAccounts">
                             <tbody>
-
                                 <asp:Repeater runat="server" ID="Repeater_Account">
                                     <ItemTemplate>
                                         <tr>
@@ -149,11 +137,9 @@
                                                     <a class="btn btn-small btn-block block tip" runat="server" href='<%# Eval("ID","~/Admin/AccountPasswordChange.aspx?id={0}&backUrl=AccountList.aspx") %>'>
                                                         <span class="icon-refresh icon-white"></span>Đổi mật khẩu mới
                                                     </a>
-
                                                     <a class="btn btn-small btn-block block tip" runat="server" href='<%# Eval("ID","~/Admin/AccountEdit.aspx?id={0}") %>'>
                                                         <span class="icon-edit icon-white"></span>Chỉnh sửa thông tin
                                                     </a>
-
                                                     <asp:LinkButton runat="server"
                                                         ID="LinkButton_Delete"
                                                         CommandArgument='<%# Eval("ID") %>'
@@ -162,21 +148,19 @@
                                                         class="btn btn-small btn-block block tip">
                                                           <span class="icon-trash icon-white"></span>Xóa dữ liệu này
                                                     </asp:LinkButton>
-
                                                     <asp:LinkButton runat="server"
                                                         ID="LinkButton_Active"
                                                         CommandArgument='<%# Eval("ID") %>'
                                                         OnClick="LinkButton_Active_Click"
-                                                        class='<%# Eval("Status").ToBool()==true? "btn btn-small btn-success tip":"btn btn-small btn-danger tip" %>'>
-                                                        <span class='<%# Eval("Status").ToBool() == true?"icon-ok icon-white":"icon-lock icon-white" %>'></span>
-                                                       <%# Eval("Status").ToBool()==true ? "Đang kích hoạt, Tạm khóa lại":"Đang tạm khóa, kích hoạt lại" %>
+                                                        class='<%# Eval("Status").ToBool()==true? "btn btn-small btn-success tip" : "btn btn-small btn-danger tip" %>'>
+                                                        <span class='<%# Eval("Status").ToBool() == true?"icon-ok icon-white" : "icon-lock icon-white" %>'></span>
+                                                       <%# Eval("Status").ToBool()==true ? "Đang kích hoạt, Tạm khóa lại" : "Đang tạm khóa, kích hoạt lại" %>
                                                     </asp:LinkButton>
                                                 </p>
                                             </td>
                                         </tr>
                                     </ItemTemplate>
                                 </asp:Repeater>
-
                             </tbody>
                         </table>
                         <!--Pagging-->

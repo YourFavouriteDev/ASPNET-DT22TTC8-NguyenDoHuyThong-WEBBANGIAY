@@ -4,7 +4,6 @@
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
@@ -24,15 +23,15 @@
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductMainCategoryList.aspx">Loại Sản Phẩm (cấp cha)</a>
+                    <a href="ProductMainCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Cha)</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductCategoryList.aspx">Loại Sản Phẩm (cấp con)</a>
+                    <a href="ProductCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Con)</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductList.aspx">Danh Sách Sản Phẩm  </a>
+                    <a href="ProductList.aspx">Danh Sách Sản Phẩm</a>
                 </li>
             </ul>
         </div>
@@ -41,7 +40,6 @@
             <div class="page-header">
                 <h1>Danh sách sản phẩm
                 </h1>
-
             </div>
 
             <div class="row-fluid">
@@ -96,7 +94,7 @@
                                     </th>
                                     <th width="50px" class="center">Mã số
                                     </th>
-                                    <th>Tiêu đề / Lượt xem / Loại / Mô tả
+                                    <th>Thông tin
                                     </th>
                                     <th width="100px" class="center">Người đăng /Ngày
                                     </th>

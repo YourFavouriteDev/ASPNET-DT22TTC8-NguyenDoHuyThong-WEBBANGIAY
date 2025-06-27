@@ -2,7 +2,6 @@
 
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Đổi mật khẩu
     </title>
@@ -20,6 +19,10 @@
                 <!--Thanh breadcrumb-->
                 <li>
                     <a runat="server" href="~/Admin/Default.aspx">Bàn Làm Việc</a>
+                    <span class="divider">&gt;</span>
+                </li>
+                <li>
+                    <a runat="server" href="~/Admin/AccountList.aspx">Tài Khoản</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>

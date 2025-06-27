@@ -17,8 +17,7 @@ public partial class Admin_login : System.Web.UI.Page
                 Response.Redirect("~/Admin/Default.aspx");
             }
             ucMessage.HideAll();
-
-            ucMessage.ShowInfo("Vui lòng đăng nhâp");
+            //ucMessage.ShowInfo("Vui lòng đăng nhâp");
         }
     }
 

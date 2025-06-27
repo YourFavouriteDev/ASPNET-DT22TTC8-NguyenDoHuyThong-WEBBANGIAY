@@ -2,7 +2,6 @@
 
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Thêm / Chỉnh sửa thông tin tài khoản
     </title>
@@ -19,19 +18,15 @@
                 </li>
                 <!--Thanh breadcrumb-->
                 <li>
-                    <a href="Default.html">Bàn Làm Việc</a>
+                    <a href="Default.aspx">Bàn Làm Việc</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="AccountCategoryList.html">Loại tài khoản</a>
+                    <a href="AccountList.aspx">Tài Khoản</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="AccountList.html">Danh sách tài khoản</a>
-                    <span class="divider">&gt;</span>
-                </li>
-                <li>
-                    <a href="#">Thông tin tài khoản</a>
+                    <a href="#">Thông Tin Tài Khoản</a>
                 </li>
             </ul>
         </div>
@@ -242,10 +237,9 @@
             <!--Link trở về-->
             <div class="tar">
                 <a runat="server" href="~/Admin/AccountList.aspx" type="button" class="btn active">
-                    <i class="icon-arrow-left"></i>Trở về trang danh sách tài khoản
+                    <i class="icon-arrow-left"></i>Danh sách tài khoản
                 </a>
             </div>
-
         </div>
     </div>
 </asp:Content>

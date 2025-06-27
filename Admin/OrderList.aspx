@@ -4,7 +4,6 @@
 <%@ Register Src="~/Admin/UserControl/ucPagging.ascx" TagPrefix="uc1" TagName="ucPagging" %>
 
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Quản lý danh sách đơn hàng
     </title>
@@ -140,7 +139,6 @@
                                         </tr>
                                     </ItemTemplate>
                                 </asp:Repeater>
-
                             </tbody>
                         </table>
                         <!--Pagging-->

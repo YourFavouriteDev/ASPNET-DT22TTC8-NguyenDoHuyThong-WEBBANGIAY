@@ -1,11 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucMenu.ascx.cs" Inherits="ucMenu" %>
-<%@ Register Src="~/Admin/UserControl/ucInfo.ascx" TagPrefix="uc1" TagName="ucInfo" %>
 
+<%@ Register Src="~/Admin/UserControl/ucInfo.ascx" TagPrefix="uc1" TagName="ucInfo" %>
 
 <div class="menu">
     <%--ucinfo--%>
     <uc1:ucInfo runat="server" ID="ucInfo" />
-
 
     <ul class="navigation">
         <!--Dasboard-->
@@ -69,7 +68,7 @@
 
         </li>
 
-        <!--ArticleMainCategory-->
+<%--        <!--ArticleMainCategory-->
         <li>
             <a runat="server" href="~/Admin/ArticleMainCategoryList.aspx">
                 <span class="isw-folder"></span>
@@ -93,9 +92,7 @@
             <div class="dr"><span></span></div>
         </li>
 
-
-
-
+--%>
 
         <!--ContactCategory-->
         <li>
@@ -111,7 +108,6 @@
                 <span class="isw-mail"></span>
                 <span class="text">Thư Liên Hệ</span>
             </a>
-            <div class="dr"><span></span></div>
         </li>
     </ul>
 </div>

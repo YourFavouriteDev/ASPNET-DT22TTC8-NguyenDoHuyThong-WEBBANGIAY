@@ -3,7 +3,6 @@
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 <%@ Register Src="~/Admin/UserControl/ucPagging.ascx" TagPrefix="uc1" TagName="ucPagging" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
@@ -64,8 +63,7 @@
                                 </asp:LinkButton>
                             </asp:Panel>
                         </div>
-
-
+                        
                         <div class="dataTables_length">
                             <asp:LinkButton runat="server"
                                 ID="LinkButton_ClearSearch"
@@ -97,7 +95,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <asp:Repeater runat="server" ID="Repeater_Main">
                                     <ItemTemplate>
                                         <tr>
@@ -154,7 +151,6 @@
                                         <center>Chưa có dữ liệu</center>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                         <!--Pagging-->
@@ -162,7 +158,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>

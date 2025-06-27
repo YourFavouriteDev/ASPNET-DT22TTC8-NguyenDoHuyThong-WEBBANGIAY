@@ -21,11 +21,11 @@
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductMainCategoryList.aspx">Loại Sản Phẩm (cấp cha)</a>
+                    <a href="ProductMainCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Cha)</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductCategoryList.aspx">Loại Sản Phẩm (cấp con)</a>
+                    <a href="ProductCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Con)</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
@@ -50,7 +50,7 @@
                     <div class="head clearfix">
                         <div class="isw-list">
                         </div>
-                        <h1>Thêm / chỉnh sửa sản phẩm
+                        <h1>Thêm / Chỉnh sửa sản phẩm
                         </h1>
                     </div>
                     <div class="block-fluid customize accordion">

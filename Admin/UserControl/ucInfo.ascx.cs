@@ -35,7 +35,6 @@ public partial class ucInfo : System.Web.UI.UserControl
     protected void LinkButton_Logout_Click(object sender, EventArgs e)
     {
         Session.Abandon();
-        //Chuyển hướng về trang chủ
         Response.Redirect("~/Admin/login.aspx");
     }
 

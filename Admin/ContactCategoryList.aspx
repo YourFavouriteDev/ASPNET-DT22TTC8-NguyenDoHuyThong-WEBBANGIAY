@@ -19,15 +19,11 @@
                 </li>
                 <!--Thanh breadcrumb-->
                 <li>
-                    <a href="Default.html">Bàn Làm Việc</a>
+                    <a href="Default.aspx">Bàn Làm Việc</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ContactMainCategoryList.html">Loại thư liên hệ (Cấp Cha)</a>
-                    <span class="divider">&gt;</span>
-                </li>
-                <li>
-                    <a href="ContactCategoryList.html">Loại thư liên hệ (Cấp Con)</a>
+                    <a href="ContactCategoryList.aspx">Loại thư liên hệ</a>
                 </li>
             </ul>
         </div>
@@ -35,10 +31,8 @@
         <div class="workplace">
             <div class="page-header">
                 <h1>Loại thư liên hệ
-
                 </h1>
             </div>
-
              <div class="row-fluid">
                 <div class="span3">
                     <div class="head clearfix">
@@ -116,7 +110,7 @@
                             <div class="span10">
                                 <input runat="server" id="input_Title" type="text" />
 
-                                <span>VD: Tin bất động sản trong nước </span>
+                                <span>VD: Liên Hệ Phản Ánh Chất Lượng Dịch Vụ </span>
                             </div>
                         </div>
                         <!--Mô tả-->

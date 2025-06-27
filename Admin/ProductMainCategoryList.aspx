@@ -2,13 +2,11 @@
 
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Quản lý danh mục loại sản phẩm</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
     <div class="content">
-
         <div class="breadLine">
             <ul class="breadcrumb">
                 <!--Nút ẩn/hiện menu bên góc trái-->
@@ -19,18 +17,17 @@
                 </li>
                 <!--Thanh breadcrumb-->
                 <li>
-                    <a href="Default.html">Bàn Làm Việc</a>
+                    <a href="Default.aspx">Bàn Làm Việc</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductMainCategoryList.html">Danh Mục Loại sản phẩm (Cấp Cha)</a>
+                    <a href="ProductMainCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Cha)</a>
                 </li>
             </ul>
         </div>
-
         <div class="workplace">
             <div class="page-header">
-                <h1>Danh Mục sản phẩm (Cấp Cha)
+                <h1>Danh Mục Loại Sản Phẩm (Cấp Cha)
                 </h1>
             </div>
 
@@ -111,7 +108,7 @@
                             <div class="span10">
                                 <input runat="server" id="input_Title" type="text" />
 
-                                <span>VD: Tin bất động sản trong nước </span>
+                                <span>VD: Adidas, Bitis, ... </span>
                             </div>
                         </div>
                         <!--Mô tả-->
@@ -136,8 +133,7 @@
                                 <br />
                                 <asp:FileUpload runat="server" ID="FileUpload_Avatar" class="skip" preview="avatar-preview" />
                                 <br />
-                                <span>Hình đại diện cho bài báo. Bạn có thể upload hình mới nếu muốn.
-                                            Các Loại file hỗ trợ: *.jpg, *.jpeg, *.gif, *.png
+                                <span>Hình đại diện cho Loại sản phẩm cấp cha
                                 </span>
                             </div>
                         </div>
@@ -165,7 +161,6 @@
                                 </asp:LinkButton>
                             </div>
                             <div class="span10">
-
                                 <!--Thông báo-->
                                 <uc1:ucMessage runat="server" ID="ucMessage" />
                             </div>
@@ -174,11 +169,10 @@
                 </div>
                 <div class="tar">
                     <a href="ProductList.aspx" type="button" class="btn active">
-                        <i class="icon-arrow-left"></i>Trở về trang sản phẩm
+                        <i class="icon-arrow-left"></i>Danh sách sản phẩm
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>

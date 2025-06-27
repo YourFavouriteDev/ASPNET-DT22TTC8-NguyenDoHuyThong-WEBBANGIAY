@@ -2,7 +2,6 @@
 
 <%@ Register Src="~/Admin/UserControl/ucMessage.ascx" TagPrefix="uc1" TagName="ucMessage" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
@@ -22,18 +21,18 @@
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductCategoryList.aspx">Danh mục Sản Phẩm (Cấp Cha)</a>
+                    <a href="ProductMainCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Cha)</a>
                     <span class="divider">&gt;</span>
                 </li>
                 <li>
-                    <a href="ProductCategoryList.aspx">Danh mục Sản Phẩm (Cấp Con)</a>
+                    <a href="ProductCategoryList.aspx">Danh Mục Loại Sản Phẩm (Cấp Con)</a>
                 </li>
             </ul>
         </div>
 
         <div class="workplace">
             <div class="page-header">
-                <h1>Loại Sản Phẩm (Cấp con)
+                <h1>Danh Mục Loại Sản Phẩm (Cấp con)
                 </h1>
             </div>
 
@@ -43,7 +42,7 @@
                     <div class="head clearfix">
                         <div class="isw-folder">
                         </div>
-                        <h1>Danh mục loại Sản Phẩm (cấp con)
+                        <h1>Danh Mục Loại Sản Phẩm (Cấp Con)
                         </h1>
                     </div>
                     <!--Loại Cấp Cha + Cấp Con-->
@@ -124,7 +123,7 @@
                             </div>
                             <div class="span10">
                                 <input runat="server" id="input_Title" type="text" />
-                                <span>VD: Tin bất động sản trong nước </span>
+                                <span>VD: Giày MLB Nam, Giày Ultraboost, ... </span>
                             </div>
                         </div>
                         <!--Mô tả-->
@@ -150,7 +149,7 @@
                                 <asp:FileUpload runat="server" ID="FileUpload_Avatar"
                                     class="skip" preview="avatar-preview" />
                                 <br />
-                                <span>Hình đại diện cho bài báo. Bạn có thể upload hình mới nếu muốn.
+                                <span>Hình đại diện cho loại sản phẩm. Bạn có thể upload hình mới nếu muốn.
                                             Các Loại file hỗ trợ: *.jpg, *.jpeg, *.gif, *.png
                                 </span>
                             </div>
@@ -188,11 +187,10 @@
                 <!--Link trở lại-->
                 <div class="tar">
                     <a href="ProductList.aspx" type="button" class="btn active">
-                        <i class="icon-arrow-left"></i>Trở về trang danh sách Sản Phẩm
+                        <i class="icon-arrow-left"></i>Danh sách Sản Phẩm
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>

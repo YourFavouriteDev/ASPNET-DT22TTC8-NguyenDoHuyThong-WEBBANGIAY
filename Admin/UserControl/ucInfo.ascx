@@ -9,12 +9,12 @@
 
 <div class="admin">
     <div class="image">
-        <img runat="server" id="img_Admin_Avatar" src="../../fileuploads/Account/8761ea0b-776c-4504-a845-58d5617d90f4.png" class="use-avatar" />
+        <img runat="server" id="img_Admin_Avatar" class="use-avatar" />
     </div>
     <ul class="control">
         <li>
             <span class="icon-user"></span>
-            <a runat="server" id="a_Admin_FullName" href="AccountEdit.html?id=admin">Lê Minh Hiếu</a>
+            <a runat="server" id="a_Admin_FullName" href="AccountEdit.html?id=admin"></a>
         </li>
         <li>
             <span class="icon-cog"></span>
