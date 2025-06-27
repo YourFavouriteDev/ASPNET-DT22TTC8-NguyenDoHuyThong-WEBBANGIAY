@@ -147,17 +147,22 @@
                                 }">
                         <span class="text-white mr-4">Roller</span>-skate
                     </h3>
-                    <div class="btn-group slide-animate" data-animation-options="{
-                                    'name': 'fadeInLeftShorter',
+                    <p class="font-weight-normal text-default slide-animate" data-animation-options="{
+                                    'name': 'fadeInRightShorter',
+                                    'duration': '1s',
+                                    'delay': '.6s'
+                                }">
+                         <span class="font-weight-bolder text-secondary">Đừng bỏ lỡ cơ hội</span>
+                    </p>
+
+                    <a href="ProductGrid.aspx"
+                        class="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animate"
+                        data-animation-options="{
+                                    'name': 'fadeInRightShorter',
                                     'duration': '1s',
                                     'delay': '.8s'
-                                }">
-                        <a href="ProductGrid.aspx"
-                            class="btn btn-dark btn-outline btn-rounded btn-icon-right">SHOP
-                                        NOW<i class="w-icon-long-arrow-right"></i>
-                        </a>
-                    </div>
-                    <!-- End of .banner-content -->
+                                }">Xem chi tiết<i class="w-icon-long-arrow-right"></i></a>
+
                 </div>
                 <!-- End of .container -->
             </div>

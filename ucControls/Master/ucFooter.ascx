@@ -39,18 +39,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="widget">
-                        <h4 class="widget-title">Tài Khoản Của Tôi</h4>
-                        <ul class="widget-body">
-                            <li><a href="#">Theo Dõi Đơn Hàng</a></li>
-                            <li><a href="ProductShoppingCart.aspx">Xem Giỏ Hàng</a></li>
-                            <li><a href="Account.aspx">Đăng Nhập</a></li>
-                            <li><a href="#">Trợ Giúp</a></li>
-                            <li><a href="#">Lịch Sử Đơn Hàng</a></li>
-                        </ul>
-                    </div>
-                </div>
+               
                 <div class="col-lg-3 col-sm-6">
                     <div class="widget">
                         <h4 class="widget-title">Hỗ Trợ Khách Hàng</h4>

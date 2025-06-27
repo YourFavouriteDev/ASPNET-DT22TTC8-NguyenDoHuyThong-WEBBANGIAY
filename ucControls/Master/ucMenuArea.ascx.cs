@@ -39,10 +39,10 @@ public partial class ucMenuArea : System.Web.UI.UserControl
         {
             liSanPham.Attributes["class"] = "active";
         }
-        else if (url.Contains("articlelist"))
-        {
-            liTinTuc.Attributes["class"] = "active";
-        }
+        //else if (url.Contains("articlelist"))
+        //{
+        //    liTinTuc.Attributes["class"] = "active";
+        //}
         else if (url.Contains("aboutus"))
         {
             liGioiThieu.Attributes["class"] = "active";
@@ -95,8 +95,8 @@ public partial class ucMenuArea : System.Web.UI.UserControl
                         ID = p.ArticleMainCategoryID,
                         p.Title
                     };
-        Repeater_MenuArticle.DataSource = query.ToList();
-        Repeater_MenuArticle.DataBind();
+        //Repeater_MenuArticle.DataSource = query.ToList();
+        //Repeater_MenuArticle.DataBind();
     }
     protected void LinkButton_Logout_Click(object sender, EventArgs e)
     {

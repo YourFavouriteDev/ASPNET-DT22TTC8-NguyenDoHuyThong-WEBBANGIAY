@@ -14,7 +14,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-left">
-                <p class="welcome-msg" runat="server" id="a_wellcome">
+                <p class="welcome-msg" runat="server" id="a_wellcome" style="color: #004a80; font-weight: 600;">
                     Xin chào! <span runat="server" id="span_FullName" style="margin-right: 8px"> </span>
                 </p>
                 <p class="welcome-msg">CHÀO MỪNG BẠN ĐẾN VỚI WOLMART STORE!</p>
@@ -49,7 +49,7 @@
                 </div>
                 <!-- End of Dropdown Menu 2 -->
                 <span class="divider d-lg-show"></span>
-                <a runat="server" href="~/ArticleList.aspx" class="d-lg-show">Bài viết</a>
+                <%--<a runat="server" href="~/ArticleList.aspx" class="d-lg-show">Bài viết</a>--%>
                 <a runat="server" href="~/AboutUs.aspx" class="d-lg-show">Giới thiệu</a>
                 <a runat="server" href="~/Contact.aspx" class="d-lg-show">Liên hệ với chúng tôi</a>
                 <!-- End of Dropdown Menu -->
@@ -145,7 +145,7 @@
                                 </ul>
                                 <!-- End of Megamenu -->
                             </li>
-                            <li id="liTinTuc" runat="server">
+                            <%--<li id="liTinTuc" runat="server">
                                 <a runat="server" href="~/ArticleList.aspx">Bài viết</a>
                                 <ul class="sub_menu pages">
                                     <asp:Repeater runat="server" ID="Repeater_MenuArticle">
@@ -154,7 +154,7 @@
                                         </ItemTemplate>
                                     </asp:Repeater>
                                 </ul>
-                            </li>
+                            </li>--%>
                             <li id="liGioiThieu" runat="server">
                                 <a runat="server" href="~/AboutUs.aspx">Giới thiệu</a>
                             </li>

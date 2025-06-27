@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucContactForm.ascx.cs" Inherits="ucContactForm" %>
+
 <%@ Register Src="~/ucControls/Common/ucMessage.ascx" TagPrefix="uc2" TagName="ucMessage" %>
-
-
 
 <asp:UpdatePanel runat="server">
     <ContentTemplate>
@@ -40,7 +39,5 @@
                         Gửi thư liên hệ
                 </asp:LinkButton>
         </div>
-
-
     </ContentTemplate>
 </asp:UpdatePanel>

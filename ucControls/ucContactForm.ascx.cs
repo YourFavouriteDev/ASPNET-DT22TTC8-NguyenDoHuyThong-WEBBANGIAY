@@ -16,7 +16,6 @@ public partial class ucContactForm : System.Web.UI.UserControl
         if (!IsPostBack)
         {
             LoadData();
-
             LoadCategories();
             ucMessage.HideAll();
         }
@@ -74,11 +73,8 @@ public partial class ucContactForm : System.Web.UI.UserControl
         db.Contacts.Add(item);
         db.SaveChanges();
 
-
         //Thông báo thành công
         ucMessage.ShowSuccess("Gửi thư liên hệ thành công! Chúng tôi sẽ sớm liên hệ lại với bạn");
-
-
     }
 
     public void LoadCategories()
