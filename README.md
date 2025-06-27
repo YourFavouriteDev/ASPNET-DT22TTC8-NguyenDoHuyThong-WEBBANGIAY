@@ -1,7 +1,11 @@
 ﻿# 👟 Website Bán Giày - ASP.NET C#
 
 Dự án xây dựng hệ thống website thương mại điện tử bán giày, gồm giao diện người dùng thân thiện và hệ thống quản trị viên để quản lý sản phẩm, đơn hàng, người dùng và liên hệ. Sử dụng ASP.NET Web Forms với ngôn ngữ lập trình C# và cơ sở dữ liệu SQL Server.
+
 Nhóm thực hiện: Nguyễn Đỗ Huy Thông
+Email: 
+SĐT:
+
 ---
 
 ## 📌 Mục tiêu chính
